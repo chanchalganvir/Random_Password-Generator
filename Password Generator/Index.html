@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- This declaration specifies the document type and version of HTML -->
+<html lang="en">
+<!-- The root element of the HTML document with language attribute set to English -->
+<head>
+    <!-- Head section containing metadata and links to external resources -->
+    <meta charset="UTF-8" />
+    <!-- Set the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configure the viewport for better responsiveness on various devices -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Include Font Awesome for icons with a specific version and integrity check -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the external stylesheet for custom styles -->
+    <title>Password Generator</title>
+    <!-- Set the title of the HTML document -->
+</head>
+<body>
+<!-- Body section containing the content of the HTML document -->
+<div class="container">
+    <!-- Main container for the page content -->
+    <h2>Password Generator</h2>
+    <!-- Heading for the password generator section -->
+    <div class="result-container">
+        <!-- Container for displaying the generated password and copy button -->
+        <span id="result"></span>
+        <!-- Placeholder for the generated password -->
+        <button class="btn" id="clipboard">
+            <!-- Button for copying the generated password to the clipboard -->
+            <i class="far fa-clipboard"></i>
+            <!-- Clipboard icon from Font Awesome -->
+        </button>
+    </div>
+    <div class="settings">
+        <!-- Container for password generation settings -->
+        <div class="setting">
+            <!-- Individual setting for password length -->
+            <label>Password Length</label>
+            <!-- Label for the password length input -->
+            <input type="number" id="length" min="4" max="20" value="20">
+            <!-- Input for specifying the password length with minimum and maximum values -->
+        </div>
+        <!-- Repeat similar comments for the following settings -->
+        <div class="setting">
+            <label>Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="setting">
+            <label>Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="setting">
+            <label>Include numbers</label>
+            <input type="checkbox" id="numbers" checked>
+        </div>
+        <div class="setting">
+            <label>Include symbols</label>
+            <input type="checkbox" id="symbols" checked>
+        </div>
+    </div>
+
+    <button class="btn btn-large" id="generate">
+        <!-- Button for generating passwords with a larger size -->
+        Generate Password
+    </button>
+</div>
+<script src="script.js"></script>
+<!-- Include the JavaScript file for interactive functionality -->
+</body>
+</html>

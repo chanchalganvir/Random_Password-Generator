@@ -1,0 +1,98 @@
+/* Importing the 'Muli' font from Google Fonts with fallback to sans-serif */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Applying box-sizing: border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    background-color: #3b3b98;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Styling the h2 element */
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+/* Styling the main container */
+.container {
+  background-color: #23235b;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+/* Styling the result container */
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+/* Styling the result element within the result container */
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* Styling the scrollbar in the result container on WebKit browsers */
+#result::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Styling the copy button within the result container */
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+/* Styling general buttons */
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Styling larger buttons */
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+/* Styling the password generation settings */
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
